@@ -1,0 +1,59 @@
+.my-flix-page {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.my-flix-page .main {
+  background-color: green;
+  color: white;
+  background-image: url("../assets/Odyssey1920x1080.png");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  background-color: black;
+}
+
+/* Original was a fixed 1200px/500px width, which overflowed on mobile (observed bug).
+   Ported to a responsive max-width instead so 375/768px have no horizontal scroll. */
+.my-flix-page .mycards {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.my-flix-page .mypostingbox {
+  max-width: 500px;
+  width: calc(100% - 32px);
+  margin: 20px auto;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.my-flix-page .form-floating > input {
+  background-color: transparent;
+  color: white;
+}
+
+.my-flix-page .form-floating > label {
+  color: white;
+}
+
+.my-flix-page .input-group > label {
+  background-color: transparent;
+  color: white;
+}
+
+.my-flix-page .mypostingbox > button {
+  width: 100%;
+}
+
+.my-flix-page .review-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}

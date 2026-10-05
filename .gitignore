@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Secrets / environment config — never commit real values
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*-adminsdk*.json
+
+# OS
+.DS_Store
